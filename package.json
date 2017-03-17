@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-mauron85-background-geolocation",
+  "name": "cordova-plugin-lents-background-geolocation",
   "version": "2.2.5",
   "description": "Cordova Background Geolocation Plugin",
   "cordova": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mauron85/cordova-plugin-background-geolocation.git"
+    "url": "git+https://github.com/lents/cordova-plugin-background-geolocation.git"
   },
   "keywords": [
     "gps",
@@ -33,7 +33,7 @@
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/mauron85/cordova-plugin-background-geolocation/issues"
+    "url": "https://github.com/lents/cordova-plugin-background-geolocation/issues"
   },
-  "homepage": "https://github.com/mauron85/cordova-plugin-background-geolocation#readme"
+  "homepage": "https://github.com/lents/cordova-plugin-background-geolocation#readme"
 }
