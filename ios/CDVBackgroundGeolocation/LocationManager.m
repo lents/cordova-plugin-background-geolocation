@@ -269,9 +269,9 @@ enum {
 
     if (!isStarted) return;
 
-    if (_config.isDebugging) {
+    //if (_config.isDebugging) {
         AudioServicesPlaySystemSound (operationMode  == FOREGROUND ? paceChangeYesSound : paceChangeNoSound);
-    }
+    //}
 
     if (operationMode == FOREGROUND || !_config.saveBatteryOnBackground) {
         isAcquiringSpeed = YES;
