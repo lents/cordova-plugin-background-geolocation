@@ -28,7 +28,7 @@
     isDebugging = NO;
     activityType = @"OTHER";
     stopOnTerminate = NO;
-    saveBatteryOnBackground = YES;
+    saveBatteryOnBackground = NO;
     maxLocations = 10000;
     syncThreshold = 100;
     pauseLocationUpdates = YES;
@@ -73,7 +73,7 @@
         instance.httpHeaders = config[@"httpHeaders"];
     }
     if (isNotNull(config[@"saveBatteryOnBackground"])) {
-        instance.saveBatteryOnBackground = [config[@"saveBatteryOnBackground"] boolValue];
+        instance.saveBatteryOnBackground = NO; (*[config[@"saveBatteryOnBackground"] boolValue];*)
     }
     if (isNotNull(config[@"maxLocations"])) {
         instance.maxLocations = [config[@"maxLocations"] integerValue];

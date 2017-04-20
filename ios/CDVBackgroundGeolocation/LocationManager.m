@@ -269,9 +269,9 @@ enum {
 
     if (!isStarted) return;
 
-    //if (_config.isDebugging) {
-        AudioServicesPlaySystemSound (operationMode  == FOREGROUND ? paceChangeYesSound : paceChangeNoSound);
-    //}
+    if (_config.isDebugging) {
+      AudioServicesPlaySystemSound (operationMode == FOREGROUND ? paceChangeYesSound : paceChangeNoSound);
+    }
 
     if (operationMode == FOREGROUND || !_config.saveBatteryOnBackground) {
         isAcquiringSpeed = YES;
@@ -515,7 +515,7 @@ enum {
         actAsInMode = FOREGROUND;
         //Change Hesham/Venkat
         //saveBatteryOnBackground is set YES but it was returning NO and couldn't match with equality below and since we forced "actAsInMode to FOREGROUND" and we commented below line
-       // if (_config.saveBatteryOnBackground == YES) actAsInMode = FOREGROUND;
+        if (_config.saveBatteryOnBackground == YES) actAsInMode = FOREGROUND;
     }
 
     if (actAsInMode == FOREGROUND) {
@@ -618,6 +618,7 @@ enum {
     }
 
     [self queue:bestLocation];
+
 }
 
 /**
